@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/MenuInterface/MenuArea.tscn" type="PackedScene" id=1]
+
+[node name="menu" type="Spatial"]
+
+[node name="MenuArea" parent="." instance=ExtResource( 1 )]
+transform = Transform( 0.88906, 0, 0.45779, 0, 1, 0, -0.45779, 0, 0.88906, -0.287773, 0, -0.67791 )
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 1, 0, 1.74846e-007, 0, 1, 0, -1.74846e-007, 0, 1, 0, 0, 0.625625 )
+fov = 65.0
