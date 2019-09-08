@@ -1,4 +1,4 @@
-extends CanvasLayer
+extends Control
 
 # Declare member variables here. Examples:
 # var a = 2
@@ -14,4 +14,8 @@ func _ready():
 
 func _input(event):
 	pass
-	$Control/cursor.rect_position = event.position
+	$cursor.rect_position = event.position
+
+func _on_Button_pressed():
+	OS.alert("test")
+	print("test")

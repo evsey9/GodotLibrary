@@ -22,7 +22,7 @@ func _input(event):
 
 
 # Mouse events for Area
-func _input_event(camera, event, click_pos, click_normal, shape_idx):
+func _menu_input_event(camera, event, click_pos, click_normal, shape_idx):
 	# Use click pos (click in 3d space, convert to area space)
 	var pos = self.get_global_transform().affine_inverse()
 	# the click pos is not zero, then use it to convert from 3D space to area space
@@ -69,3 +69,4 @@ func _input_event(camera, event, click_pos, click_normal, shape_idx):
 func _ready():
 	viewport = get_node("Viewport")
   
+
